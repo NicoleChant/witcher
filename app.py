@@ -75,7 +75,7 @@ spell = st.secrets["spell"]
 st.write(spell)
 
 def get_random_quote():
-    with open("../scraper/quotes.json" , "r") as f:
+    with open("quotes.json" , "r") as f:
         quotes = json.load(f)
     return random.choice(quotes)
 
